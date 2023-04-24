@@ -1,0 +1,120 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+nav ul li:last-child {
+	margin-right: 0;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+main {
+	margin: 20px;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+p {
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+footer {
+		position: fixed;
+		bottom: 0px;
+		left: 0px;
+		width: 100%;
+		height: 50px;
+		padding:15px;
+		background-color: #000;
+		color:khaki;
+		text-align: center;
+}
+@media only screen and (max-width: 768px) {
+	/* Menüyü yan tarafta tutma */
+	.menu {
+	  position: fixed;
+	  left: -200px;
+	  top: 0;
+	  bottom: 0;
+	  height: 100%;
+	  width: 200px;
+	  background-color: #222;
+	  z-index: 999;
+	  transition: all .3s ease;
+	}
+  
+	/* Menu gösterme */
+	.show-menu .menu {
+	  left: 0;
+	}
+  
+	/* Ana içerik alanını daraltma */
+	.main-content {
+	  width: calc(100% - 200px);
+	  margin-left: 200px;
+	}
+  
+	/* Yeni menü butonu */
+	.menu-button {
+	  display: block;
+	  margin: 10px auto;
+	  width: 50px;
+	  height: 50px;
+	  background-color: #222;
+	  color: #fff;
+	  font-size: 24px;
+	  text-align: center;
+	  line-height: 50px;
+	  cursor: pointer;
+	}
+  
+	/* İletişim formunu yeniden boyutlandırma */
+	form {
+	  width: 100%;
+	}
+	
+	/* İletişim formu elemanlarını yeniden boyutlandırma */
+	input[type="text"], textarea {
+	  width: 100%;
+	  padding: 10px;
+	  margin-bottom: 20px;
+	  border-radius: 5px;
+	  border: none;
+	}
+  
+	/* Gönder butonunu yeniden boyutlandırma */
+	input[type="submit"] {
+	  width: 100%;
+	  padding: 10px;
+	  border-radius: 5px;
+	  border: none;
+	  background-color: #222;
+	  color: #fff;
+	  cursor: pointer;
+	}
+  }
